@@ -10,12 +10,12 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\lavan\.android\avd\tiramisucake.avd" />
+                  <value value="C:\Users\lavan\.android\avd\my_android_device.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-06-07T16:39:33.143080700Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-06-11T20:34:22.612725900Z" />
         </State>
       </entry>
       <entry key="msgshareapp">

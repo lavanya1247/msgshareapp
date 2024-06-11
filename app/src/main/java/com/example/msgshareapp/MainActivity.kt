@@ -8,8 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.runtime.key
-
 
 class MainActivity: AppCompatActivity() {
 
@@ -31,5 +29,21 @@ class MainActivity: AppCompatActivity() {
             intent.putExtra("user_message", message)
             startActivity(intent)
         }
+            val btnsharetootherapps = findViewById<Button>(R.id.btnsharetootherapps)
+            btnsharetootherapps.setOnClickListener {
+                val editTextText = findViewById<EditText>(R.id.editTextText )
+                val message = editTextText.text.toString()
+                val intent = Intent()
+                intent.action = Intent.ACTION_SEND
+                intent.putExtra(Intent.EXTRA_TEXT, message)
+                intent.type = "text/plain"
+                startActivity(Intent.createChooser(intent, "share to: "))
+            }
+        val btnrecyclerviewdemo = findViewById<Button>(R.id.btnrecyclerviewdemo)
+        btnrecyclerviewdemo.setOnClickListener {
+            val intent = Intent(this,HobbiesActivity::class.java)
+            startActivity(intent)
+        }
+
+        }
     }
-}
